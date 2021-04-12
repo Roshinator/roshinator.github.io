@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 305px;
+    width: max(305px, 1fr);
     height: 255px;
 }
 
@@ -49,6 +49,7 @@
     border-radius: 10px;
     box-shadow: 10px 10px 10px #CCC;
     transition: box-shadow 0.5s, width 0.5s, height 0.5s;
+    position: fixed;
 }
 
 .card:active {
@@ -57,9 +58,10 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px #CCC;
     transition: box-shadow 0.1s, width 0.1s, height 0.1s;
+    position: fixed;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header {
         padding-top: 25px;
         padding-bottom: 25px;
