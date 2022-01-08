@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    background-color: #0C2654;
+    background-color: #FFFFFF;
     width: 100%;
     height: fit-content;
     padding-top: 50px;
@@ -16,7 +16,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
@@ -38,6 +38,7 @@ body {
 }
 
 .card-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,9 +56,10 @@ body {
     object-fit: scale-down;
     transition: box-shadow 0.25s, width 0.25s, height 0.25s, background-color 0.25s;
     position: relative;
+    overflow: hidden;
 }
 
-.card:hover {
+.card-container:hover > .card {
     background-color: #EEE;
     width: 105%;
     height: 105%;
@@ -65,7 +67,7 @@ body {
     transition: box-shadow 0.25s, width 0.25s, height 0.25s, background-color 0.25s;
 }
 
-.card:active {
+.card-container:active > .card {
     background-color: #EEE;
     width: 95%;
     height: 95%;
@@ -78,6 +80,47 @@ body {
     height: 100%;
     filter: blur(10px);
     object-fit: cover;
+    z-index: -1;
+    background-color: #333;
+}
+
+.proj-title {
+    position: absolute;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25;
+    transition: top 0.25s, transform 0.25s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-container:hover > .proj-title {
+    top: 10%;
+    transform: translateY(-10%);
+    transition: top 0.25s, transform 0.25s;
+}
+
+.proj-description {
+    position: absolute;
+    user-select: none;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    opacity: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-container:hover > .proj-description {
+    opacity: 100%;
+    transition: opacity 0.25s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -105,12 +148,12 @@ body {
         box-shadow: 2.5px 2.5px 5px #444;
     }
 
-    .card:hover {
+    .card-container:active > .card {
         background-color: #444;
         box-shadow: 5px 5px 10px #444;
     }
 
-    .card:hover {
+    .card-container:hover > .card {
         background-color: #444;
         box-shadow: 1px 1px 2px #444;
     }
