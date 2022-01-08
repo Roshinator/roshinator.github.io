@@ -28,11 +28,11 @@ data = [
             },
             {
                 title:"CrossCorrupt",
-                img: "",
+                img: "images/CC.png",
                 tag: "Cross platform file / folder corrupting tool, written in C# and Eto.forms.",
                 ref: "https://github.com/Ravbug/CrossCorrupt",
             }
         ]
-    },    
+    },
 ]
 document.currentScript.remove()
