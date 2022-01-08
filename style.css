@@ -122,6 +122,19 @@ body {
     transition: opacity 0.25s;
 }
 
+@media (pointer:coarse) {
+
+    .proj-title {
+        top: 10%;
+        transform: translateY(-10%);
+    }
+
+    .proj-description {
+        opacity: 100%;
+        transition: opacity 0.25s;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     .header {
         padding-top: 25px;
