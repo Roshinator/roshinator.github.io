@@ -141,6 +141,10 @@ body {
         background-color: black;
     }
 
+    .title {
+        color: white;
+    }
+
     .card {
         background-color: #333;
         border-color: rgba(0, 0, 0, 0.125);
