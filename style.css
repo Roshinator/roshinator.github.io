@@ -172,7 +172,7 @@ h1 {
 @media (prefers-color-scheme: dark) {
 
     body {
-        background-color: black;
+        background-color: #1F2223;
     }
 
     h1 {
@@ -182,7 +182,7 @@ h1 {
     .card {
         background-color: #333;
         border-color: rgba(0, 0, 0, 0.125);
-        box-shadow: 2.5px 2.5px 5px #444;
+        box-shadow: 2.5px 2.5px 5px black;
         background-blend-mode: multiply;
     }
 
@@ -192,12 +192,12 @@ h1 {
 
     .card-container:active > .card {
         background-color: #444;
-        box-shadow: 5px 5px 10px #444;
+        box-shadow: 1px 1px 2px black;
     }
 
     .card-container:hover > .card {
         background-color: #444;
-        box-shadow: 1px 1px 2px #444;
+        box-shadow: 5px 5px 10px black;
     }
 
 }
