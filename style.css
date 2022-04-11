@@ -16,7 +16,7 @@ header {
 
 h1 {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter var", Arial, Helvetica, sans-serif;
     font-size: 48px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -99,7 +99,7 @@ h1 {
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter Var", Arial, Helvetica, sans-serif;
     font-size: 25;
     transition: top 0.25s, transform 0.25s;
     margin-left: 20px;
@@ -125,7 +125,7 @@ h1 {
     transform: translateY(-50%);
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter var", Arial, Helvetica, sans-serif;
     font-size: 15;
     opacity: 0;
     margin-left: 20px;
