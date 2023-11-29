@@ -4,6 +4,8 @@
 	let count = 0;
 
 	const displayed_count = spring();
+	displayed_count.stiffness = 0.1;
+	displayed_count.damping = 0.1;
 	$: displayed_count.set(count);
 	$: offset = modulo($displayed_count, 1);
 
