@@ -29,3 +29,10 @@ h1 {
 	font-size: 48px;
 	color: #FF94A4;
 }
+
+.h-flow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
