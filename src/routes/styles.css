@@ -5,6 +5,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+
 }
 
 .no-shrink {
@@ -26,8 +27,5 @@ html, body {
 h1 {
 	font-family: "InterDisplay";
 	font-size: 48px;
-}
-
-.header-background {
-	text-align: center;
+	color: #FF94A4;
 }

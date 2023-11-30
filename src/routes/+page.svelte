@@ -1,13 +1,8 @@
 <script lang="ts">
 	import "./styles.css";
 
-	import {onMount} from 'svelte';
-	import {fly} from 'svelte/transition';
-
 	import NavItem from "./NavItem.svelte";
-
-	let ready = false;
-	onMount(() => ready = true)
+	import Header from "./Header.svelte";
 </script>
 
 <svelte:head>
@@ -15,24 +10,18 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="flex-root page-size no-shrink">
-	<div class="header-background">
-		<h1>
-			Title
-		</h1>
+<Header name={"Projects"}/>
+
+<div class="item-root">
+	<div class="nav no-shrink">
+		<NavItem name={"Tankken"}/> 
+		<NavItem name={"Game Boy Inator"}/> 
+		<NavItem name={"GEDCOM Viewer"}/> 
+		<NavItem name={"CrossCorrupt"}/> 
 	</div>
+	<div class="view">
 
-{#if ready}
-	<div class="item-root" transition:fly={{y: 50, duration:1000}}>
-		<div class="nav no-shrink">
-			<NavItem />
-		</div>
-		<div class="view">
-
-		</div>
 	</div>
-{/if}
-
 </div>
 
 
@@ -45,19 +34,19 @@
 		display: flex;
 		flex-direction: row;
 
-		border: 1px solid black;
+		border: 2px solid black;
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 5px;
 
-		background-color: red;
+		
 	}
 
 	.nav {
 		width: 400px;
 		height: 100%;
 
-		border-right: 1px solid black;
+		border-right: 2px solid black;
 	}
 
 	.view {
