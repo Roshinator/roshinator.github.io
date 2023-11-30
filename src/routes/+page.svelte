@@ -1,7 +1,13 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+<script lang="ts">
+	import "./styles.css";
+
+	import {onMount} from 'svelte';
+	import {fly} from 'svelte/transition';
+
+	import NavItem from "./NavItem.svelte";
+
+	let ready = false;
+	onMount(() => ready = true)
 </script>
 
 <svelte:head>
@@ -9,51 +15,56 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+<div class="flex-root page-size no-shrink">
+	<div class="header-background">
+		<h1>
+			Title
+		</h1>
+	</div>
 
-		to your new<br />SvelteKit app
-	</h1>
+{#if ready}
+	<div class="item-root" transition:fly={{y: 50, duration:1000}}>
+		<div class="nav no-shrink">
+			<NavItem />
+		</div>
+		<div class="view">
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+		</div>
+	</div>
+{/if}
 
-	<Counter />
-</section>
+</div>
+
+
 
 <style>
-	section {
+
+	.item-root {
+		height: 100%;
+		flex-shrink: 100000;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+		flex-direction: row;
+
+		border: 1px solid black;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+
+		background-color: red;
 	}
 
-	h1 {
-		width: 100%;
+	.nav {
+		width: 400px;
+		height: 100%;
+
+		border-right: 1px solid black;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
+	.view {
 		width: 100%;
 		height: 100%;
-		top: 0;
-		display: block;
+		flex-shrink: 100;
+
 	}
+
 </style>
