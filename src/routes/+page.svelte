@@ -2,15 +2,12 @@
 	import "./styles.css";
 
 	import NavItem from "./NavItem.svelte";
-	import Header from "./Header.svelte";
 </script>
 
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-
-<Header name={"Projects"}/>
 
 <div class="item-root">
 	<div class="nav no-shrink">
@@ -29,6 +26,22 @@
 
 
 <style>
+
+	.no-shrink {
+	    flex-shrink: 0;
+    }
+
+    .flex-root {
+        /*background-color: #FF94A4;*/
+        display: flex;
+        align-items: stretch;
+        justify-content: top;
+        flex-direction: column;
+    }
+
+    .page-size {
+        height: 100%;
+    }
 
 	.item-root {
 		height: 100%;

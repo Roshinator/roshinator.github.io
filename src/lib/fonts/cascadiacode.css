@@ -8,13 +8,13 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("CascadiaCode.woff2") format("woff2");
+    src: url("fonts/Cascadia Code/CascadiaCode.woff2") format("woff2");
   }
   @font-face {
     font-family: CascadiaCode;
     font-style: italic;
     font-weight: 100 900;
     font-display: swap;
-    src: url("CascadiaCodeItalic.woff2") format("woff2");
+    src: url("fonts/Cascadia Code/CascadiaCodeItalic.woff2") format("woff2");
   }
   

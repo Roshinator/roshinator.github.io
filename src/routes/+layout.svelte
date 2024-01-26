@@ -1,4 +1,16 @@
+<script>
+    import Header from '$lib/components/Header.svelte';
+</script>
 
-<div class="flex-root page-size no-shrink">
+<div>
+    <Header/>
     <slot/>
 </div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+</style>

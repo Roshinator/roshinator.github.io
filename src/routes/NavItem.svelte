@@ -1,5 +1,5 @@
 <script lang="ts">
-    import '$lib/fonts/Cascadia Code/cascadiacode.css';
+    import '$lib/fonts/cascadiacode.css';
 
     type HEX = `#${string}`;
 
