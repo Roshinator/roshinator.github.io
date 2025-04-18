@@ -21,7 +21,7 @@ data = [
                 ref:"https://github.com/roshinator/game-boy-inator",
             },
             {
-                title:"Tankista",
+                title:"Tankken",
                 img:"https://rrsoftware.github.io/images/appicon.png",
                 tag:"Mulitplayer tank battle game in development",
                 ref:"https://rrsoftware.github.io",
