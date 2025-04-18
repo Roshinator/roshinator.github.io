@@ -1,0 +1,8 @@
+{
+    "issuer": "https://matrix-auth.roshinator.com/",
+    "authorization_endpoint": "https://matrix-auth.roshinator.com/authorize",
+    "token_endpoint": "https://matrix-auth.roshinator.com/oauth2/token",
+    "jwks_uri": "https://matrix-auth.roshinator.com/oauth2/keys.json",
+    "registration_endpoint": "https://matrix-auth.roshinator.com/oauth2/registration",
+    "//": "..."
+}
