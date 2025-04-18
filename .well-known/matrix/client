@@ -3,7 +3,7 @@
         "base_url": "https://matrix.roshinator.com"
     },
         "org.matrix.msc2965.authentication": {
-        "issuer": "https://matrix-auth.roshinator.com/",
+        "issuer": "https://roshinator.com/",
         "account": "https://matrix-auth.roshinator.com/account"
     },
     "org.matrix.msc4143.rtc_foci": [
