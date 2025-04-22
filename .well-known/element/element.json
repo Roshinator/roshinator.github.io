@@ -21,7 +21,7 @@
     },
     "oidc_static_clients": {
         "https://matrix-auth.roshinator.com/": {
-            "client_id": "0000000000000000000SYNAPSE"
+            "client_id": "element-web-id"
         }
     },
     "oidc_metadata": {
