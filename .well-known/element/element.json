@@ -22,12 +22,12 @@
         "participant_limit": 50,
         "brand": "Element Call"
     },
-    "oids_static_clients": {
+    "oidc_static_clients": {
         "https://matrix-auth.roshinator.com/": {
             "client_id": "0000000000000000000SYNAPSE"
         }
     },
-    "oicd_metadata": {
+    "oidc_metadata": {
         "client_uri": "https://roshinator.com"
     },
     "features": {
