@@ -7,3 +7,11 @@
     Access-Control-Allow-Origin: *
     Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
     Access-Control-Allow-Headers: X-Requested-With, Content-Type, Authorization
+
+/.well-known/openid-configuration
+    Content-Type: application/json
+    Access-Control-Allow-Origin: *
+
+/.well-known/element/element.json
+    Content-Type: application/json
+    Access-Control-Allow-Origin: *
