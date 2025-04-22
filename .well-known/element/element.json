@@ -1,36 +1,3 @@
 {
-    "default_server_name": "roshinator.com",
-    "disable_custom_urls": false,
-    "disable_guests": true,
-    "default_widget_container_height": 280,
-    "default_country_code": "US",
-    "show_labs_settings": false,
-    "default_federate": false,
-    "default_theme": "dark",
-    "room_directory": {
-        "servers": ["matrix.roshinator.com"]
-    },
-    "enable_presence_by_hs_url": {
-        "https://roshinator.com": false,
-        "https://matrix.roshinator.com": false
-    },
-    "element_call": {
-        "url": "https://matrix-rtc.roshinator.com",
-        "participant_limit": 50,
-        "brand": "Element Call"
-    },
-    "oidc_static_clients": {
-        "https://matrix-auth.roshinator.com/": {
-            "client_id": "element-web-id"
-        }
-    },
-    "oidc_metadata": {
-        "client_uri": "https://roshinator.com"
-    },
-    "features": {
-        "feature_pinning": true,
-        "feature_video_rooms": true,
-        "feature_element_call_video_rooms": true,
-        "feature_group_calls": true
-    }
+    
 }
