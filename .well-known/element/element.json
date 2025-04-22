@@ -1,20 +1,10 @@
 {
     "default_server_name": "roshinator.com",
-    "default_server_config": {
-        "m.homeserver": {
-            "base_url": "https://matrix.roshinator.com",
-            "server_name": "roshinator.com"
-        }
-    },
     "disable_custom_urls": false,
     "disable_guests": true,
-    "disable_login_language_selector": false,
-    "disable_3pid_login": true,
-    "force_verification": false,
     "default_widget_container_height": 280,
     "default_country_code": "US",
-    "show_labs_settings": true,
-    "features": {},
+    "show_labs_settings": false,
     "default_federate": false,
     "default_theme": "light",
     "room_directory": {
@@ -31,5 +21,17 @@
         "url": "https://matrix-rtc.roshinator.com",
         "participant_limit": 50,
         "brand": "Element Call"
+    },
+    "oids_static_clients": {
+        "https://matrix-auth.roshinator.com/": {
+            "client_id": "0000000000000000000SYNAPSE"
+        }
+    },
+    "oicd_metadata": {
+        "client_uri": "https://roshinator.com"
+    },
+    "features": {
+        "feature_video_rooms": true,
+        "feature_element_call_video_rooms": true
     }
 }
