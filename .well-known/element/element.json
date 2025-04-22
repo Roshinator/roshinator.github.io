@@ -6,16 +6,13 @@
     "default_country_code": "US",
     "show_labs_settings": false,
     "default_federate": false,
-    "default_theme": "light",
+    "default_theme": "dark",
     "room_directory": {
         "servers": ["matrix.roshinator.com"]
     },
     "enable_presence_by_hs_url": {
         "https://roshinator.com": false,
         "https://matrix.roshinator.com": false
-    },
-    "setting_defaults": {
-        "breadcrumbs": true
     },
     "element_call": {
         "url": "https://matrix-rtc.roshinator.com",
@@ -31,7 +28,9 @@
         "client_uri": "https://roshinator.com"
     },
     "features": {
+        "feature_pinning": true,
         "feature_video_rooms": true,
-        "feature_element_call_video_rooms": true
+        "feature_element_call_video_rooms": true,
+        "feature_group_calls": true
     }
 }
